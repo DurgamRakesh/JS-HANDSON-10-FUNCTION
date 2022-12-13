@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-HANDSON-10-FUNCTION</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>JAVA SCRIPT HANDSON-10<br><span class="arr">Function</span></h1>
+
+    
+    <h2>Question 1 : Create one function with zero parameter having a console statement;
+    </h2>
+    <pre>
+        function myfun(){
+            console.log('function with zero parameter');
+        }
+        myfun()
+    </pre>
+    <p>Output: function with zero parameter</p>
+
+    <h2>Question 2 : Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"
+    </h2>
+    <pre>
+        function sum(num1,num2){
+            let total = num1 + num2
+            console.log(`sum of ${num1},${num2} is ${total}`);
+        }
+        sum(3,4);
+    </pre>
+    <p>Output: Sum of 3, 4 is 7</p>
+
+    <h2>Question 3 : Create one arrow function
+    </h2>
+    <pre>
+        const arrow = () => {
+        console.log('this is arrow funtion');
+        }
+        arrow()
+    </pre>
+    <p>Output: this is arrow funtion</p>
+
+    <h2>Question 4 : Print output: </h2>
+    <pre>
+        var x = 21;
+        var girl = function () {
+            console.log(x);
+            var x = 20;
+        };
+        girl ();
+    </pre>
+    <p>Output: undefined</p>
+
+    <h2>Question 5 : Print output: </h2>
+    <pre>
+        var x = 21;
+        girl ();
+        console.log(x)
+        function girl() {
+            console.log(x);
+            var x = 20;
+        };
+    </pre>
+    <p>Output: undefined 21</p>
+
+    <h2>Question 6 : Print output: </h2>
+    <pre>
+        var x = 21;
+        a();
+        b();
+
+        function a() {
+        x = 20;
+        console.log(x);
+        };
+
+        function b() {
+            x = 40;
+        console.log(x);
+        };
+    </pre>
+    <p>Output: 20 40</p>
+
+    <h2>Question 7 : Write a function that accepts parameter n and returns factorial of n </h2>
+    <pre>
+        const myfac = (n) => {
+    
+            if(n == 0){
+                return 1;
+            }
+            else{
+                return n * myfac(n-1);
+            }
+            
+        }
+        const factorial = myfac(5);
+        console.log(factorial);
+        
+    </pre>
+    <p>Output: 120</p>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
